@@ -42,7 +42,6 @@ export async function generateStaticParams() {
 
 function sectionLabel(section: string): string {
   const labels: Record<string, string> = {
-    root: 'Overview',
     malware: 'Malware Arsenal',
     'shadowbrokers-dump': 'ShadowBrokers Dump',
     ttps: 'TTPs',
@@ -57,7 +56,6 @@ function categoryBadgeVariant(section: string): BadgeVariant {
     malware: 'danger',
     'shadowbrokers-dump': 'warning',
     ttps: 'nation',
-    root: 'default',
   }
   return map[section] ?? 'default'
 }
@@ -193,13 +191,6 @@ export default async function DetailPage({
               ))}
             </div>
           )}
-        </div>
-      )}
-
-      {/* Root-level pages (timeline, references) — minimal header */}
-      {section === 'root' && (
-        <div className="mb-6">
-          <h1 className="text-2xl font-bold text-[#e6edf3]">{meta.title || item}</h1>
         </div>
       )}
 

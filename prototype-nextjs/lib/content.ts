@@ -53,11 +53,10 @@ export function getGroupContent(
   let filePath: string
 
   if (section && item) {
-    if (section === 'root') {
-      filePath = path.join(APT_GROUPS_DIR, slug, `${item}.md`)
-    } else {
-      filePath = path.join(APT_GROUPS_DIR, slug, section, `${item}.md`)
-    }
+    filePath = path.join(APT_GROUPS_DIR, slug, section, `${item}.md`)
+  } else if (!section && item) {
+    // Root-level file (e.g., timeline.md, references.md)
+    filePath = path.join(APT_GROUPS_DIR, slug, `${item}.md`)
   } else {
     filePath = path.join(APT_GROUPS_DIR, slug, 'overview.md')
   }
@@ -95,7 +94,7 @@ export function getGroupNav(slug: string): NavSection[] {
   for (const item of ['timeline', 'references']) {
     const fp = path.join(groupDir, `${item}.md`)
     if (fs.existsSync(fp)) {
-      overviewItems.push({ label: slugToLabel(item), href: `/groups/${slug}/root/${item}` })
+      overviewItems.push({ label: slugToLabel(item), href: `/groups/${slug}/${item}` })
     }
   }
   nav.push({ title: 'Overview', items: overviewItems })
@@ -158,12 +157,8 @@ export function getGroupDetailParams(): { slug: string; section: string; item: s
   for (const slug of slugs) {
     const groupDir = path.join(APT_GROUPS_DIR, slug)
 
-    // Root-level pages
-    for (const item of ['timeline', 'references']) {
-      if (fs.existsSync(path.join(groupDir, `${item}.md`))) {
-        params.push({ slug, section: 'root', item })
-      }
-    }
+    // Root-level items (timeline, references) are handled by dedicated routes
+    // and do not need to be listed here
 
     // Sub-directory pages
     for (const section of ['malware', 'shadowbrokers-dump', 'ttps']) {
