@@ -38,6 +38,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               >
                 Groups
               </Link>
+              <Link
+                href="/graph"
+                className="px-3 py-1.5 rounded text-[#8b949e] hover:text-[#e6edf3] hover:bg-[#21262d] transition-colors"
+              >
+                Graph
+              </Link>
               <a
                 href="https://attack.mitre.org/"
                 target="_blank"

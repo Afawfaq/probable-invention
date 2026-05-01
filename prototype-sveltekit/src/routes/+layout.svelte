@@ -15,6 +15,7 @@
       </a>
       <nav class="flex items-center gap-1 text-sm">
         <a href="/" class="px-3 py-1.5 rounded text-[#8b949e] hover:text-[#e6edf3] hover:bg-[#21262d] transition-colors">Groups</a>
+        <a href="/graph" class="px-3 py-1.5 rounded text-[#8b949e] hover:text-[#e6edf3] hover:bg-[#21262d] transition-colors">Graph</a>
         <a href="https://attack.mitre.org/" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded text-[#8b949e] hover:text-[#e6edf3] hover:bg-[#21262d] transition-colors">MITRE ATT&CK ↗</a>
       </nav>
     </div>

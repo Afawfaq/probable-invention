@@ -135,7 +135,7 @@ Coverage will include:
 | 3 | Turla deep profile + annotated source code | ✅ Complete |
 | 4 | Fancy Bear / APT28 deep profile + annotated source code | ✅ Complete |
 | 5 | MITRE ATT&CK integration, TTP tables for all groups | ✅ Complete |
-| 6 | Relationship graph / association visualiser | 🔲 Planning |
+| 6 | Relationship graph / association visualiser | ✅ Complete |
 | 7 | Interactive timelines per group | 🔲 Planning |
 | 8 | Additional groups (Lazarus, Cozy Bear, Sandworm, etc.) | 🔲 Planning |
 | 9 | Community contributions & open research notes | 🔲 Planning |
