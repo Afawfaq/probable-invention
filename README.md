@@ -130,12 +130,12 @@ Coverage will include:
 
 | Phase | Description | Status |
 |-------|-------------|--------|
-| 1 | Research foundation: Equation Group full source code study + annotations | 🔲 Up next |
-| 2 | Build two prototype frontends (Next.js and SvelteKit) — compare both | 🔲 Planning |
-| 3 | Turla deep profile + annotated source code | 🔲 Planning |
-| 4 | Fancy Bear / APT28 deep profile + annotated source code | 🔲 Planning |
-| 5 | MITRE ATT&CK integration, TTP tables for all groups | 🔲 Planning |
-| 6 | Relationship graph / association visualiser | 🔲 Planning |
+| 1 | Research foundation: Equation Group full source code study + annotations | ✅ Complete |
+| 2 | Build two prototype frontends (Next.js and SvelteKit) — compare both | ✅ Complete |
+| 3 | Turla deep profile + annotated source code | ✅ Complete |
+| 4 | Fancy Bear / APT28 deep profile + annotated source code | ✅ Complete |
+| 5 | MITRE ATT&CK integration, TTP tables for all groups | ✅ Complete |
+| 6 | Relationship graph / association visualiser | ✅ Complete |
 | 7 | Interactive timelines per group | 🔲 Planning |
 | 8 | Additional groups (Lazarus, Cozy Bear, Sandworm, etc.) | 🔲 Planning |
 | 9 | Community contributions & open research notes | 🔲 Planning |
