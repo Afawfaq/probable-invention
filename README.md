@@ -131,8 +131,8 @@ Coverage will include:
 | Phase | Description | Status |
 |-------|-------------|--------|
 | 1 | Research foundation: Equation Group full source code study + annotations | ✅ Complete |
-| 2 | Build two prototype frontends (Next.js and SvelteKit) — compare both | 🔶 In Progress (Next.js prototype complete) |
-| 3 | Turla deep profile + annotated source code | 🔲 Planning |
+| 2 | Build two prototype frontends (Next.js and SvelteKit) — compare both | ✅ Complete |
+| 3 | Turla deep profile + annotated source code | ✅ Complete |
 | 4 | Fancy Bear / APT28 deep profile + annotated source code | 🔲 Planning |
 | 5 | MITRE ATT&CK integration, TTP tables for all groups | 🔲 Planning |
 | 6 | Relationship graph / association visualiser | 🔲 Planning |
