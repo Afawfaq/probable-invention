@@ -91,10 +91,15 @@ export function getGroupNav(slug: string): NavSection[] {
   const overviewItems: NavItem[] = [
     { label: 'Overview', href: `/groups/${slug}` },
   ]
-  for (const item of ['timeline', 'references']) {
+  const rootPageLabels: Record<string, string> = {
+    timeline: 'Timeline',
+    attck: 'ATT&CK Matrix',
+    references: 'References',
+  }
+  for (const item of ['timeline', 'attck', 'references']) {
     const fp = path.join(groupDir, `${item}.md`)
     if (fs.existsSync(fp)) {
-      overviewItems.push({ label: slugToLabel(item), href: `/groups/${slug}/${item}` })
+      overviewItems.push({ label: rootPageLabels[item] ?? slugToLabel(item), href: `/groups/${slug}/${item}` })
     }
   }
   nav.push({ title: 'Overview', items: overviewItems })

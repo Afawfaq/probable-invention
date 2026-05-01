@@ -134,7 +134,7 @@ Coverage will include:
 | 2 | Build two prototype frontends (Next.js and SvelteKit) — compare both | ✅ Complete |
 | 3 | Turla deep profile + annotated source code | ✅ Complete |
 | 4 | Fancy Bear / APT28 deep profile + annotated source code | ✅ Complete |
-| 5 | MITRE ATT&CK integration, TTP tables for all groups | 🔲 Planning |
+| 5 | MITRE ATT&CK integration, TTP tables for all groups | ✅ Complete |
 | 6 | Relationship graph / association visualiser | 🔲 Planning |
 | 7 | Interactive timelines per group | 🔲 Planning |
 | 8 | Additional groups (Lazarus, Cozy Bear, Sandworm, etc.) | 🔲 Planning |
